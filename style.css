@@ -1,0 +1,132 @@
+:root {
+    --primary: #fff;
+    --secondary: #000;
+    --warning: #fd3809;
+}
+
+.dark-theme {
+    --primary: #000;
+    --secondary: #fff;
+}
+            
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+            
+body {
+    background: var(--primary);
+}
+            
+.container {
+    padding: 20px 250px;
+}
+            
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+            
+.nav .logo {
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+            
+.nav .logo:hover {
+    color: var(--warning);
+}
+            
+.menu ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+            
+.menu ul li {
+    list-style-type: none;
+    padding: 0 20px;
+}
+            
+.menu ul li a {
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+            
+.menu ul li a:hover {
+    color: var(--warning);
+}
+            
+.change-dark {
+    color: var(--secondary);
+    font-size: 22px;
+    background: var(--warning);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+            
+.change-dark img {
+    width: 32px;
+    height: auto;
+}
+            
+.change-dark .bi-sun-fill {
+    color: #fff;
+}
+            
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    gap: 100px;
+}
+            
+.content h1 {
+    color: var(--secondary);
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+            
+.content p {
+    color: var(--secondary);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+            
+.content a {
+    text-decoration: none;
+    background: var(--warning);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    color: var(--secondary);
+    margin-top: 40px;
+}
+            
+.content img {
+    max-width: 600px;
+    height: auto;
+}
+            
+.icon a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+            
+.icon a .bi {
+    font-size: 22px;
+    color: var(--secondary);
+}
+            
+.icon a .bi:hover {
+    color: var(--warning);
+}
